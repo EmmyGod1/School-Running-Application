@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+    each user in user_list
+      li
+        a(href=user.url) #{user.name}
+        //- |  (#{author.date_of_birth} - #{author.date_of_death})
+        //- if val.status = 'author.date_of_birth'
+        //- span  (Date_of_birth: #{val.date_of_birth_formatted} )
+ 
+    else
+      li There are no users.

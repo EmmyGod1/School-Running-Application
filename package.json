@@ -1,0 +1,29 @@
+{
+  "name": "school-running-application",
+  "version": "1.0.0",
+  "description": "A School system application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "devstart": "nodemon ./app.js",
+    "serverstart": "DEBUG=express-school-running-application:* npm run devstart"
+  },
+  "keywords": [],
+  "author": "Emeka Ezeogo Okorie",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "http-errors": "^2.0.0",
+    "luxon": "^3.4.3",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
